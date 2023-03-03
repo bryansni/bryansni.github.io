@@ -101,7 +101,7 @@ async function recognizeFaces() {
     dis = parseFloat(results[i]["distance"])
     console.log(lab + dis)
 
-    if (lab != "unknown" && dis < 0.6) {  //2023,3,3 將差距值由0.4-->0.6
+    if (lab != "unknown" && dis < 0.3) {  //2023,3,3 將差距值由0.4-->0.6
       $.get(board_url + 'open');
     }
 
